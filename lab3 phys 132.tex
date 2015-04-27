@@ -1,0 +1,72 @@
+\documentclass[12pt]{report}
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+
+\title{Lab3 \\ Absolute Zero}
+\author{Dominic Martinez-Ta}
+\date{27 April 2015}
+
+\begin{document}
+\maketitle
+
+
+\section{Purpose}
+	
+	To investigate how the pressure of a given quantity of gas in a fixed volume varies with
+the temperature. This relationship between pressure and temperature, which is approximately
+linear for low number densities and temperatures somewhat above liquefaction, is
+extrapolated to zero pressure. The temperature at which this occurs is absolute zero.
+
+\section {Materials and resources}
+
+Data Studio, Water, Salt, Hot water, Dry Ice, Thermometers, Pressure meter. Love.
+
+\section{Procedure}
+	1. Start with the bulb submerged hot water. Be careful not to open the bulb during the experiment.
+	2. When the temperature on the digits display stabilizes, log the data point.
+	3. Cool the system by adding cold water, taking new data points when appropriate.
+	4. Stir the water with the bulb using a vertical motion, but do not expose the top of the bulb to the air. It must always remain submerged.
+	5. If the water container becomes too full, remove a small amount of the water.
+	Fit this data and record your results. Be sure to include error analysis and error bars in your fit.
+
+	To obtain a lower temperature point, we will cool salt water using dry ice.
+	1. Make a 7 m solution of salt water. You can lookup how to do this. Do not just pour in lots of salt or there will not be enough for the other groups. Compute the correct amount of salt to add to make the 7 m solution.
+	2. Make sure the final total amount of solution you make will not overflow out of the container. The liquid level will rise when you introduce the bulb and dry ice. Be sure to leave enough room for this. You will need to stir for 5 min to 10 min to dissolve the salt.
+	3. If you cool the solution to 0 °C using ice you will dilute the solution. Either determine how to compensate for this to maintain the 7 m concentration, or only use the dry ice to cool the solution.
+	4. Start with the bulb fully submerged. Add dry ice to cool the solution until it reaches the minimum temperature of a salt water and dry ice bath. Do not add so much that the solution freezes. Continuously agitate the solution with the bulb to prevent this.
+
+\section{Questions}
+	\textbf{1. While cooling or heating the liquid you are taking a thermodynamic system through a quasi-static process. (Remember, you are measuring the temperature and pressure of the gas in the bulb.) Thus,
+the system is passing through a series of equilibrium states. The theory of equilibrium thermodynamics
+can only be applied to data taken while the system is in an equilibrium state. Estimate the relaxation
+time for this system, and justify the rate at which you are taking data.
+}
+
+	The Relaxation time of the system was about 10 to 15 minutes. This was because as the temperature became cooler, we would have added more energy to be able to move our items. The metal Sphere would become stuck if it weren't being moved and the entire experiment would have solidified due to the low temperature and addition of Dry Ice. By keeping the water and salt mixture moving in the cold. We were able to force equilibrium to happen faster by exciting and mixing the molecules. However, once the system was nearing equilibrium, it would have slowed down once it reached its relaxation time and would have thus stayed at a steady temeprature of -20°C.
+
+	\textbf{2.What are assumptions of the ideal gas law?}
+
+	My assumptions of the ideal gas law are that temperature would be decrease as the pressure increase. Which was what we measured to be true in our experiment. We also that the volume was inversely proportional to the pressure. Which meant that when we added more of the water, our pressure would decrease. That is, if the temperature were constant. But it was not. I was also able to assume, from the ideal gas law that the moles of our salt would decrease as we increased our volume. To compensate for that, we just added more salt when we felt the volume would not keep the molarity at 7 M.
+
+	\textbf{3. What is the fit assuming the Van der Waals equation of state?}
+
+		$[P+a(\frac{n}{V})^2](\frac{V}{n} - b) = RT$
+	Our graph would be shifted by about 2 units on the x axis. meaning that the temperature would decrease at a faster rate assuming the Van der Waals equation of state are being measured. The fit will be in the attached mathematica file.
+
+	\textbf{4. Why can dry ice or salt water be −20 °C? What coexists and where?}
+
+	Dry ice and saltwater, combined can be −20 °C because of the amount of moles present in it over the volume. This means that the more moles we have, the more volume we will have to have if we would want to keep it at a certain temperature.  However, because we were limiting the size of our volume while increasing the molarity (until we hit the 7 M mark) our temperature would have been steadily decreasing. This is because temperature is inversely proportional to the amount of moles present in our system. That means that the more moles we have, the colder our system could become. This would only be limited by the volume and the point at which our mixture would become a solid. 
+	So what coexists during the time our temperature reaches −20 °C is our moles to volume ratio. If we added more moles than necessary (more than 7 M), our solution would immediately crystalize at a temperature lower than the equilibrium point of −20 °C.
+	\textbf{5. What if the “gas” contains water vapor? Can you set a limit of percentage of gas that is water vapor from the data?}
+
+	if our gas contained water vapoy (which is not enough to effect our laboratory), then our pressures would have increased by a factor of the Pressure of the water vapor. From our data, however, we cannot set a limit of percentage of gas that is water vaper.
+	\textbf{6. How would you account for the change in volume of the sphere due to thermal expansion? Assume the ball is stainless steel.}
+
+	We would calculate the volume of the sphere and subtract that from the volume of displaced water. There, that would give us the true volume of the system.
+
+
+	\textbf{Graphs are on the wolfwram file that I have attached to this laboratory.}
+	
+
+\end{document}
