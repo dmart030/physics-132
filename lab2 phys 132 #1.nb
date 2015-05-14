@@ -1,0 +1,2053 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     77922,       2044]
+NotebookOptionsPosition[     75225,       1948]
+NotebookOutlinePosition[     75568,       1963]
+CellTagsIndexPosition[     75525,       1960]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ FormBox[
+  RowBox[{"f", "=", 
+   TemplateBox[{"n"},
+    "Prime"]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376213981976275`*^9, 3.6376214275710363`*^9}, {
+   3.6376215039485016`*^9, 3.6376215216401634`*^9}, {3.6376219614599805`*^9, 
+   3.6376219634206147`*^9}, {3.6376220105156937`*^9, 3.637622012097199*^9}, {
+   3.6376224712282424`*^9, 3.6376224763878975`*^9}, {3.637622575939777*^9, 
+   3.637622590469431*^9}, {3.6376228733774295`*^9, 3.637622873557494*^9}, {
+   3.63762298113094*^9, 3.6376229817501383`*^9}, {3.6376231118948183`*^9, 
+   3.6376231177236834`*^9}, 3.6376353911639166`*^9, {3.6378868613054333`*^9, 
+   3.6378868821256237`*^9}, {3.6378869373337817`*^9, 3.637886948871442*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Prime", "[", "n", "]"}]], "Output",
+ CellChangeTimes->{{3.63762141160392*^9, 3.6376214286833916`*^9}, {
+   3.637621508421929*^9, 3.6376215223083754`*^9}, 3.6376219644029236`*^9, 
+   3.637622012707395*^9, {3.6376224723686075`*^9, 3.6376224769920864`*^9}, {
+   3.6376225777143464`*^9, 3.6376225910496144`*^9}, {3.63762285421529*^9, 
+   3.6376228746988535`*^9}, 3.6376229824263525`*^9, 3.637623118170827*^9, 
+   3.6376353915579395`*^9, 3.637886840730256*^9, {3.6378868794554715`*^9, 
+   3.637886882154626*^9}, {3.6378869373337817`*^9, 3.637886948871442*^9}, 
+   3.63855822095168*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Table", "[", 
+   RowBox[{"f", ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", "20"}], "}"}]}], "]"}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{
+  3.637635381901387*^9, {3.637886879472472*^9, 3.637886882171627*^9}, {
+   3.6378869373337817`*^9, 3.637886948872442*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "3", ",", "5", ",", "7", ",", "11", ",", "13", ",", "17", ",", 
+   "19", ",", "23", ",", "29", ",", "31", ",", "37", ",", "41", ",", "43", 
+   ",", "47", ",", "53", ",", "59", ",", "61", ",", "67", ",", "71"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.6376231329215508`*^9, 3.6376266264071193`*^9, {3.6376353829044447`*^9, 
+   3.637635394577112*^9}, {3.6378868794774723`*^9, 3.637886882192628*^9}, {
+   3.6378869373347816`*^9, 3.637886948872442*^9}, 3.6385582238138313`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"EvenQ", "[", "f", "]"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637622308826229*^9, 3.63762231261445*^9}, {
+  3.637886879482473*^9, 3.6378868822126293`*^9}, {3.6378869373347816`*^9, 
+  3.6378869488734417`*^9}}],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{
+  3.6376223130685887`*^9, {3.6376225830740614`*^9, 3.637622593554418*^9}, 
+   3.637622851355375*^9, {3.6376231225502295`*^9, 3.6376231369968567`*^9}, 
+   3.637635398244322*^9, {3.6378868794874735`*^9, 3.6378868822276297`*^9}, {
+   3.6378869373347816`*^9, 3.6378869488734417`*^9}, 3.638558226720398*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"EvenQ", "/@", "f"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637622609444509*^9, 3.637622629411902*^9}, {
+  3.6376228454130793`*^9, 3.6376228462323465`*^9}, {3.6376229969420033`*^9, 
+  3.637622997957334*^9}, {3.6378868794924736`*^9, 3.637886882242631*^9}, {
+  3.637886937335782*^9, 3.6378869488734417`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Prime", "[", "False", "]"}]], "Output",
+ CellChangeTimes->{{3.6376226231839066`*^9, 3.6376226299380703`*^9}, 
+   3.637622846639471*^9, 3.6376229985505157`*^9, 3.6376354004084454`*^9, {
+   3.637886879498474*^9, 3.637886882256632*^9}, {3.637886937335782*^9, 
+   3.637886948874442*^9}, 3.6385582296015444`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"EvenQ", "[", "p", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"p", ",", "f"}], "}"}]}], "]"}], TraditionalForm]], "Input",
+ CellChangeTimes->{
+  3.6376229400397787`*^9, {3.6376229703304806`*^9, 3.6376229723241186`*^9}, {
+   3.637886879503474*^9, 3.6378868822706327`*^9}, {3.637886937335782*^9, 
+   3.637886948874442*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Table", "::", "iterb"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Iterator \[NoBreak]\\!\\({p, \\(\\(Prime[n]\\)\\)}\\)\
+\[NoBreak] does not have appropriate bounds. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/iterb\\\", ButtonNote -> \
+\\\"Table::iterb\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6385582325192003`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Table", "::", "iterb"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Iterator \[NoBreak]\\!\\({p, \\(\\(Prime[n]\\)\\)}\\)\
+\[NoBreak] does not have appropriate bounds. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/iterb\\\", ButtonNote -> \
+\\\"Table::iterb\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.638558232628728*^9}],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"EvenQ", "[", "p", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"p", ",", 
+     RowBox[{"Prime", "[", "n", "]"}]}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.637622940251848*^9, {3.6376229728482857`*^9, 3.6376229851912394`*^9}, {
+   3.6378868795094748`*^9, 3.637886882283633*^9}, {3.637886937336782*^9, 
+   3.637886948874442*^9}, 3.638558232628728*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"q", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     TemplateBox[{"n"},
+      "PrimePi"], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "10"}], "}"}]}], "]"}]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376232472891808`*^9, 3.637623304454488*^9}, {
+  3.6376233615627813`*^9, 3.637623374075786*^9}, {3.6376235716696143`*^9, 
+  3.6376236518262844`*^9}, {3.637886879514475*^9, 3.6378868822966337`*^9}, {
+  3.637886937336782*^9, 3.637886948875442*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "1", ",", "2", ",", "2", ",", "3", ",", "3", ",", "4", ",", "4", 
+   ",", "4", ",", "4"}], "}"}]], "Output",
+ CellChangeTimes->{{3.6376232799036255`*^9, 3.6376233054088*^9}, {
+   3.6376233626041107`*^9, 3.6376233750821056`*^9}, {3.6376235771213603`*^9, 
+   3.6376235954422293`*^9}, {3.637623647391865*^9, 3.6376236524334803`*^9}, {
+   3.637886879519475*^9, 3.6378868823126345`*^9}, {3.637886937337782*^9, 
+   3.637886948875442*^9}, 3.638558262971176*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"w", "=", 
+   TemplateBox[{"n"},
+    "PrimePi"]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637626640780275*^9, 3.637626670686875*^9}, 
+   3.6376267302914715`*^9, {3.6378868795254755`*^9, 3.6378868823246355`*^9}, {
+   3.637886937337782*^9, 3.637886948876442*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PrimePi", "[", "n", "]"}]], "Output",
+ CellChangeTimes->{
+  3.6376267331318784`*^9, {3.6378868795304756`*^9, 3.637886882335636*^9}, {
+   3.637886937337782*^9, 3.637886948877442*^9}, 3.6385582652680283`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Table", "[", 
+   RowBox[{"w", ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "20"}], "}"}]}], "]"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376267403402767`*^9, 3.6376267720828266`*^9}, {
+  3.6376268167384157`*^9, 3.6376268241350117`*^9}, {3.6378868795344763`*^9, 
+  3.637886882346637*^9}, {3.6378869373387823`*^9, 3.637886948877442*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "1", ",", "2", ",", "2", ",", "3", ",", "3", ",", "4", ",", "4", 
+   ",", "4", ",", "4", ",", "5", ",", "5", ",", "6", ",", "6", ",", "6", ",", 
+   "6", ",", "7", ",", "7", ",", "8", ",", "8"}], "}"}]], "Output",
+ CellChangeTimes->{{3.6376267534973326`*^9, 3.6376267685745435`*^9}, 
+   3.637626824899213*^9, {3.6378868795404763`*^9, 3.6378868823626375`*^9}, {
+   3.6378869373387823`*^9, 3.6378869488784423`*^9}, 3.6385582685935235`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "3"}], "}"}]},
+   "Norm"], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376236935236416`*^9, 3.6376237774445167`*^9}, {
+  3.6378868795454764`*^9, 3.637886882380639*^9}, {3.6378869373387823`*^9, 
+  3.6378869488784423`*^9}}],
+
+Cell[BoxData[
+ SqrtBox["14"]], "Output",
+ CellChangeTimes->{
+  3.6376237885640783`*^9, {3.637886879552477*^9, 3.6378868823946395`*^9}, {
+   3.637886937339782*^9, 3.637886948879442*^9}, 3.6385582712742243`*^9, 
+   3.6385583155043993`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  TemplateBox[{RowBox[{
+      RowBox[{"{", 
+        RowBox[{
+         "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",",
+           "8", ",", "9", ",", "10"}], "}"}], "\[LeftDoubleBracket]", 
+      RowBox[{"1", ";;", "3"}], "\[RightDoubleBracket]"}]},
+   "Norm"], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637625253444805*^9, 3.637625272596943*^9}, {
+  3.637886879566478*^9, 3.6378868823956394`*^9}, {3.637886937339782*^9, 
+  3.637886948879442*^9}}],
+
+Cell[BoxData[
+ SqrtBox["14"]], "Output",
+ CellChangeTimes->{
+  3.637625273116109*^9, {3.6378868795734777`*^9, 3.63788688240464*^9}, {
+   3.637886937339782*^9, 3.6378869488804426`*^9}, 3.63855831764515*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox["Null", TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637625218737689*^9, 3.637625219235858*^9}, {
+  3.6378868795794783`*^9, 3.63788688241164*^9}, {3.637886937340782*^9, 
+  3.6378869488804426`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  SqrtBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "+", 
+    SuperscriptBox["z", "2"]}]], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637624414816041*^9, 3.637624424670198*^9}, {
+  3.6376244754166393`*^9, 3.6376245132937717`*^9}, {3.6376245789357944`*^9, 
+  3.6376246624035177`*^9}, {3.637886879584479*^9, 3.6378868824176407`*^9}, {
+  3.637886937340782*^9, 3.6378869488804426`*^9}}],
+
+Cell[BoxData[
+ SqrtBox[
+  RowBox[{
+   SuperscriptBox["x", "2"], "+", 
+   SuperscriptBox["y", "2"], "+", 
+   SuperscriptBox["z", "2"]}]]], "Output",
+ CellChangeTimes->{{3.6376246449969435`*^9, 3.637624663459857*^9}, {
+   3.6378868795864787`*^9, 3.637886882420641*^9}, {3.6378869373417826`*^9, 
+   3.637886948881442*^9}, 3.6385583235209475`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"norm", "(", 
+    RowBox[{"x_", ",", "y_", ",", "z_"}], ")"}], ":=", 
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     SuperscriptBox["y", "2"], "+", 
+     SuperscriptBox["z", "2"]}]]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637624811740345*^9, 3.637624858621359*^9}, {
+  3.6376249135239496`*^9, 3.6376249143572097`*^9}, {3.637886879619481*^9, 
+  3.6378868824226413`*^9}, {3.6378869373417826`*^9, 3.637886948881442*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"norm", "(", 
+   RowBox[{"1", ",", "2", ",", "3"}], ")"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376249193938203`*^9, 3.6376249236491823`*^9}, {
+  3.637886879624481*^9, 3.637886882424641*^9}, {3.6378869373427825`*^9, 
+  3.637886948881442*^9}}],
+
+Cell[BoxData[
+ SqrtBox["14"]], "Output",
+ CellChangeTimes->{
+  3.6376249240323067`*^9, {3.637886879628481*^9, 3.6378868824276414`*^9}, {
+   3.6378869373427825`*^9, 3.6378869488824425`*^9}, 3.6385583309752874`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"normList1", "(", "v_", ")"}], ":=", 
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"v", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+      "2"], "+", 
+     SuperscriptBox[
+      RowBox[{"v", "\[LeftDoubleBracket]", "2", "\[RightDoubleBracket]"}], 
+      "2"], "+", 
+     SuperscriptBox[
+      RowBox[{"v", "\[LeftDoubleBracket]", "3", "\[RightDoubleBracket]"}], 
+      "2"]}]]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376249263620567`*^9, 3.6376249976548843`*^9}, {
+  3.6378868796364813`*^9, 3.6378868824306417`*^9}, {3.6378869373427825`*^9, 
+  3.6378869488824425`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"normList1", "(", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ")"}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376250009669476`*^9, 3.6376250090145254`*^9}, {
+  3.6378868796414824`*^9, 3.6378868824326415`*^9}, {3.6378869373437824`*^9, 
+  3.6378869488824425`*^9}}],
+
+Cell[BoxData[
+ SqrtBox["14"]], "Output",
+ CellChangeTimes->{
+  3.6376250095216866`*^9, {3.637886879644482*^9, 3.637886882434642*^9}, {
+   3.6378869373437824`*^9, 3.6378869488824425`*^9}, 3.6385583353491545`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"normList2", "(", "v_", ")"}], ":=", 
+   RowBox[{"norm", "@@", "v"}]}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637625012746722*^9, 3.6376250203441525`*^9}, {
+  3.6376250610611925`*^9, 3.6376250641661854`*^9}, {3.6378868796484823`*^9, 
+  3.6378868824366417`*^9}, {3.6378869373437824`*^9, 3.6378869488824425`*^9}}],
+
+Cell[BoxData[
+ FormBox["Null", TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637625116107822*^9, 3.637625118768675*^9}, {
+  3.637886879652483*^9, 3.637886882437642*^9}, {3.6378869373447824`*^9, 
+  3.6378869488834424`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"normList2", "(", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ")"}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637625072386822*^9, 3.637625082360015*^9}, {
+  3.6378868796564827`*^9, 3.6378868824406424`*^9}, {3.6378869373447824`*^9, 
+  3.6378869488834424`*^9}}],
+
+Cell[BoxData[
+ SqrtBox["14"]], "Output",
+ CellChangeTimes->{
+  3.6376250840005407`*^9, 3.6376251264021187`*^9, {3.6378868796604834`*^9, 
+   3.6378868824416423`*^9}, {3.6378869373447824`*^9, 3.6378869488834424`*^9}, 
+   3.6385583416931915`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"normRep", "(", "rep_", ")"}], ":=", 
+   RowBox[{
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", 
+      SuperscriptBox["y", "2"], "+", 
+      SuperscriptBox["z", "2"]}]], "/.", "\[VeryThinSpace]", "rep"}]}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376250892282133`*^9, 3.6376251334523783`*^9}, {
+  3.6378868796654835`*^9, 3.6378868824456425`*^9}, {3.6378869373457823`*^9, 
+  3.6378869488834424`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"normRep", "(", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Rule]", "1"}], ",", 
+     RowBox[{"y", "\[Rule]", "2"}], ",", 
+     RowBox[{"z", "\[Rule]", "3"}]}], "}"}], ")"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637625136772442*^9, 3.63762515812928*^9}, {
+  3.6378868796694837`*^9, 3.6378868824476423`*^9}, {3.6378869373457823`*^9, 
+  3.6378869488844423`*^9}}],
+
+Cell[BoxData[
+ SqrtBox["14"]], "Output",
+ CellChangeTimes->{
+  3.637625158765484*^9, {3.637886879673484*^9, 3.6378868824496427`*^9}, {
+   3.6378869373457823`*^9, 3.6378869488844423`*^9}, 3.638558382332537*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"makePlot", "(", 
+     RowBox[{"data_", ",", "fn_"}], ")"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"listPlot", ",", "fnPlot", ",", "xMin", ",", "xMax"}], "}"}], 
+      ",", 
+      RowBox[{
+       RowBox[{"xMin", "=", 
+        RowBox[{"min", "(", 
+         RowBox[{"data", "\[LeftDoubleBracket]", 
+          RowBox[{"All", ",", "1"}], "\[RightDoubleBracket]"}], ")"}]}], ";", 
+       RowBox[{"xMax", "=", 
+        RowBox[{"max", "(", 
+         RowBox[{"data", "\[LeftDoubleBracket]", 
+          RowBox[{"All", ",", "1"}], "\[RightDoubleBracket]"}], ")"}]}], ";", 
+       RowBox[{"listPlot", "=", 
+        RowBox[{"ListPlot", "[", 
+         RowBox[{"data", ",", " ", 
+          RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", " ", 
+          RowBox[{"PlotStyle", " ", "\[Rule]", "Black"}], ",", 
+          RowBox[{"AxesLabel", "\[Rule]", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}]}]}], "]"}]}], ";", 
+       RowBox[{"fnPlot", "=", 
+        RowBox[{"Plot", "[", 
+         RowBox[{
+          RowBox[{"fn", "(", "x", ")"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "xMin", ",", "xMax"}], "}"}], ",", " ", 
+          RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Black"}], ",", " ", 
+          RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "y"}], "}"}]}]}], "]"}]}], ";", 
+       RowBox[{"Return", "[", 
+        RowBox[{"Show", "[", 
+         RowBox[{"listPlot", ",", "fnPlot"}], "]"}], "]"}], ";"}]}], "]"}]}], 
+   ";"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637625386903551*^9, 3.6376254643339486`*^9}, {
+   3.63762562449461*^9, 3.637625765569947*^9}, {3.6376258103495417`*^9, 
+   3.6376258463084335`*^9}, {3.6376258788993464`*^9, 3.637625924630725*^9}, {
+   3.63762685858978*^9, 3.637627000981389*^9}, {3.6376271331360846`*^9, 
+   3.637627135144005*^9}, {3.6376273973610773`*^9, 3.6376274048536806`*^9}, {
+   3.6376275319946947`*^9, 3.6376275550365458`*^9}, 3.6376275880792036`*^9, {
+   3.6376277120051603`*^9, 3.6376277142933435`*^9}, 3.637632488206877*^9, {
+   3.6378868796794844`*^9, 3.637886882452643*^9}, {3.6378869373467827`*^9, 
+   3.6378869488844423`*^9}, {3.6385584929918523`*^9, 
+   3.6385585577685986`*^9}, {3.6385589945090327`*^9, 3.638559031017087*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"makePlot", "(", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"n", ",", 
+        TemplateBox[{"n"},
+         "PrimePi"]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "3", ",", "200"}], "}"}]}], "]"}], ",", 
+    RowBox[{
+     FractionBox["#1", 
+      RowBox[{"log", "(", "#1", ")"}]], "&"}]}], ")"}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6376271398365326`*^9, 3.6376272293155704`*^9}, {
+  3.637886879697485*^9, 3.6378868824556427`*^9}, {3.6378869373477826`*^9, 
+  3.6378869488854427`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, GraphicsComplexBox[CompressedData["
+1:eJzt10du1mAQxvGBFUsWLFiwMBFCKEKI3ssQSugl9BZMIJQVV5gDcAgfZY7i
+oyCUeZDmf4NI/jbz/TTva1v22+bw1u+N7b1m9meP2b+489vn9afifviA93YH
+4UPoN8Ar8BH4KO5zDF7FfY/DJ+CT8Ck852n4DJ77LHwOPg9fqLhS8SJ8Cb4M
+X4Gvwtcq6r1dh29U1Hv07oDtJvKwrSEv67vc6g7YbiMv6zve6Q5Z3/Vud8C2
+jryscXCvO2C7jzxsD5CXNa4edgdsj5CH7THyssbpk+6QNW6fdgdsz7odDjhl
+zYPn3Q4HnLLmzUa3yzWPAk7YXnQ7HHDKmpcvux0OOGXN41fdDgecsL1Gf7nW
+hYATtjfdDgecsL1Ff7nWoYATtnfdLte6FXDKWsfedzsccMpa9z50u1zrYMAJ
+28dul2vdDDhh+9TtcMAJ2yb6wwEnbJ/RHw44Ze0DY/cAOzzKtU8EPMEJz7B9
+6R7K2occHtW+9qGAJzjhGbat7gF2eIQDnsraJxOe1X6t4tfuAXZ4hAOeytqH
+E55h+9Y9wA6PZe3rAU9wwrOup3PAdvcAOzzCAU9lnSsSnmH73j3ADo9lnVMC
+ntS+zikJz7D96B5gh0c44AlOeC7/P0f97B7KOlc5PMIBT7peOeFZ7XUO+wUv
+9UV/7qW+6Hl5qS924lJfNC/1Bfov9UXzUl+g/1JfNC/1RfdSX3Qv9QXuv3vq
+i78WljFv
+     "], {
+      {GrayLevel[0], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 199], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 200], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 201], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 202], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 203], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 204], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 205], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 206], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 207], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 208], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 209], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 210], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 211], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 212], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 213], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 214], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 215], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 216], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 217], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 218], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 219], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 220], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 221], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 222], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 223], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 224], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 225], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 226], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 227], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 228], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 229], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 230], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 231], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 232], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 233], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 234], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 235], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 236], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 237], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 238], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 239], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 240], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 241], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 242], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 243], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 244], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 245], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 246], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 247], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 248], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 249], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 250], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 251], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 252], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 253], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 254], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 255], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 256], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 257], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 258], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 259], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 260], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 261], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 262], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 263], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 264], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 265], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 266], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 267], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 268], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 269], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 270], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 271], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 272], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 273], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 274], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 275], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 276], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 277], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 278], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 279], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 280], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 281], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 282], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 283], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 284], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 285], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 286], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 287], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 288], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 289], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 290], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 291], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 292], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 293], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 294], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 295], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 296], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 297], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 298], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 299], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 300], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 301], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 302], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 303], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 304], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 305], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 306], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 307], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 308], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 309], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 310], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 311], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 312], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 313], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 314], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 315], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 316], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 317], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 318], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 319], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 320], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 321], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 322], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 323], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 324], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 325], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 326], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 327], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 328], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 329], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 330], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 331], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 332], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 333], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 334], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 335], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 336], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 337], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 338], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 339], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 340], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 341], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 342], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 343], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 344], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 345], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 346], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 347], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 348], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 349], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 350], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 351], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 352], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 353], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 354], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 355], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 356], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 357], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 358], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 359], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 360], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 361], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 362], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 363], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 364], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 365], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 366], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 367], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 368], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 369], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 370], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 371], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 372], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 373], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 374], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 375], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 376], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 377], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 378], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 379], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 380], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 381], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 382], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 383], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 384], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 385], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 386], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 387], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 388], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 389], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 390], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 391], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 392], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 393], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 394], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 395], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 396]}, {}}], {}}, {{}, {}, 
+    {GrayLevel[0], LineBox[CompressedData["
+1:eJwVT3k41AkARWbGoBMJmVwdSu5jheb5ta515QiVFcNMv1K5E2O2LduxuSZt
+YVLUTlJ0Wh2jZSepJpTIfVSKijSKmlBr7R/ve9/73vve+54+K8afrSAnJxc6
+g//ZwqRQR0FOCfLWry/v76CgXP+IWw1XCQsm/XpjX1GwQnNPQppMCZ0OPt7v
+pBQIVTlF9gl0fI9fUvTwOwV6CoH1Xz7Q4br1baBUlYpCmbOsYrsyaocTfJ11
+qdAcMTOMG1RGwbTplnOmVMzpUOEO96rAPe/SAc9AKo40TpSUblQFeXG4h0NS
+Qal908xuVUWO0XMPVx4V3y7VrnzRMBsMVkv8wgtUDKVzu55VzUXkqDhXSKPh
++h3rWRKdebAdzR7g6dEQe3NVwfmN80AEXpoQ29PwvlyrLqp1HkTa6xN37qTh
+dd7nxc8b5kPQ5SQSdtDQvPNSQ0uVGnrGTvunipTAJ4Ws6xNquJHva7SvXQk+
+kSe/8u3UsSbISq18XAmSkN+NfCrUwU7vJthmdPyzjp328KIG9mZNY3UJHZe1
+dE3+LtCEq8/wnKt5ysioy8woSdaBQBwUuzRdFWLj5XamjGX4SV2QsoRcABe6
++ZDXp9VQ2G8elq+/EPFRzLtZTyxxIthzh61QC/3c8yvsJ2zRqaf17qCfLk4U
+vYq5370GTkhjzAvQw3BqeFPefCauvzm13FPDAMsNkfuiwBkF1HUxNnWGmJoj
+MuEcWofMuJwkn/VLURT0rCXrtAsujOYEe35eBrYwJHpZrhscXPgy7T0rYLn9
+8rchrgeUc09JND8YoylDKPDL8cRwj+LCvF9WgV+haGy81xu/ch0z66Qm0LOj
+3Dub74t4N4OBeK4pNhdEmxg9W4/L0sVWFVNmsBPQY8we+UHcz2F7XTHH1EPZ
+TZVWf1RE7Hkov8sCTZPaKXqPA7DwaapqCsMS2ZuyQe0JRExX8x1GjyV8dw8p
+KgxsgH9EdWnLH1bQP851tu0JQmh6TuUrpjW6X4b+5vA2GO7bzcrmf7VGiUUC
+M6U/BCxedXr/WRskOcXLGto3guGWygvwsIVJsrjy48tNEJVSyxq/2WK8wuW9
+T9dm7O4uZvv9aQchQ9uY9yYUr+V+HL8f9ANCXNpZYunP8HtQz5qi2EM3RqK+
+djAM+qKRVfxSezy6r9KY8XELHhgYa8mFrME9vvjfw0nh+Di3qmVycg2WFsZp
+tEvDoejQ3EQXOCC12uNKVmIECO+Ool4XRwSzHA+Ej0bA8q+T5rwBR6zQDe47
+uZsFrzeJVQ1HnbB/Y2bC2BgL8kWyMLrlWvSN2dDadkVi+ADD5vDjtTA9R2Po
+j0dim1ZH65lkJqgdY7GHY6NgqW2dsksZaNZXcguRRUGDIzfsuwUolvB1Krhs
+zHXtkwZdB2SfrExWythQdVTZcXAaIKyma+g8Du5qErel/s7Q+Pw6hzLJwZLQ
+qOisYmcMqTPDMhO34mlaWRH53hkVnuIr3ImtGKovXZm4loCiYpjToSQSBKco
+9cERAhbNrnrXkkkc86ZIdDIJhBWbzepOIXGgTFUtNovAbUd5iekvJFqr5QWL
++AR2JQkD2w6S2DaYm7DtOIH2waHopfkkhPLVG5SLCVyUJAtqRSRSj+V3ulfO
++HnhvJE7JOxidE8V3pjZ53iEa9aQ4JsGhI7enNlT0FkWXUvCi9nSmCcioOZQ
+fW1BA4m5Xyx5gzUE0soVJRG9JCqbu2anPyJwIXWkLOM5iajHJZlt9QTa3Nuy
+K1+SOMFcRVvZOPNn4HwgfXAmH7lF2vSEwKCu54urH0hotu3LZLTO9L+3qu0a
+JXHrDONdXBsBiBaXKI6R6Dyb7FzXTkAQ9CE6RDajDcMHorsIPDBq99k/QeJk
+7qh5TTeB8U81FuVTJM6pM/cs6CVgIC5Vb/tOwkzfq4rdR8A356hseppEsNmi
+yVvPCfwHlVyQ5Q==
+      "]]}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesLabel->{
+    FormBox["x", TraditionalForm], 
+    FormBox["y", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  Method->{},
+  PlotRange->{{0, 200.}, {0, 46.}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{4., 4.}, {0.92, 0.92}}]], "Output",
+ CellChangeTimes->{{3.637627243468708*^9, 3.6376272929646854`*^9}, 
+   3.6376274074340234`*^9, {3.6376274916674547`*^9, 3.637627493175573*^9}, {
+   3.6376275427275596`*^9, 3.6376275583808136`*^9}, 3.6376275923315425`*^9, 
+   3.6376324914750643`*^9, {3.6378868797584887`*^9, 3.6378868824686437`*^9}, {
+   3.6378869373537827`*^9, 3.6378869488874426`*^9}, {3.6385583852871895`*^9, 
+   3.6385583916742477`*^9}, {3.638558538146796*^9, 3.6385585634047737`*^9}, 
+   3.6385590393446836`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6385596768100715`*^9, 3.6385596817086687`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"makeFramePlot", "[", 
+    RowBox[{"data_", ",", "fn_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"listPlot", ",", "fnPlot", ",", "xMin", ",", "xMax"}], "}"}], 
+     ",", 
+     RowBox[{
+      RowBox[{"xMin", "=", 
+       RowBox[{"Min", "[", 
+        RowBox[{"data", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"xMax", "=", 
+       RowBox[{"Max", "[", 
+        RowBox[{"data", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"listPlot", "=", 
+       RowBox[{"ListPlot", "[", 
+        RowBox[{"data", ",", 
+         RowBox[{"PlotMarkers", "\[Rule]", "Automatic"}], ",", 
+         RowBox[{"PlotStyle", "\[Rule]", "Black"}], ",", 
+         RowBox[{
+         "FrameLabel", "\[Rule]", "\"\<Number of Primes Less Than\>\""}], ",", 
+         RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+         RowBox[{"FrameStyle", "\[Rule]", 
+          RowBox[{"Directive", "[", 
+           RowBox[{"Gray", ",", "12"}], "]"}]}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"fnPlot", "=", 
+       RowBox[{"Plot", "[", 
+        RowBox[{
+         RowBox[{"fn", "[", "x", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "xMin", ",", "xMax"}], "}"}], ",", 
+         RowBox[{"PlotStyle", "\[Rule]", "Black"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Show", "[", 
+        RowBox[{"listPlot", ",", "fnPlot"}], "]"}], "//", "Return"}], ";"}]}],
+     "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.638559201039092*^9, 3.6385592540874453`*^9}, {
+   3.6385595294576006`*^9, 3.638559543455905*^9}, {3.638559667525918*^9, 
+   3.6385597901975665`*^9}, {3.638559827460251*^9, 3.63855996654082*^9}, 
+   3.6385601383046002`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"makeFramePlot", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"n", ",", 
+        RowBox[{"PrimePi", "[", "n", "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "3", ",", "200"}], "}"}]}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"#", "/", 
+      RowBox[{"Log", "[", "#", "]"}]}], "&"}]}], "]"}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6385592732629642`*^9, 3.6385592771956677`*^9}, {
+   3.6385593544232035`*^9, 3.638559360854738*^9}, {3.6385599935690393`*^9, 
+   3.638560002138385*^9}, {3.6385600416461787`*^9, 3.638560045801057*^9}, 
+   3.638560244375244*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, GraphicsComplexBox[CompressedData["
+1:eJzt10du1mAQxvGBFUsWLFiwMBFCKEKI3ssQSugl9BZMIJQVV5gDcAgfZY7i
+oyCUeZDmf4NI/jbz/TTva1v22+bw1u+N7b1m9meP2b+489vn9afifviA93YH
+4UPoN8Ar8BH4KO5zDF7FfY/DJ+CT8Ck852n4DJ77LHwOPg9fqLhS8SJ8Cb4M
+X4Gvwtcq6r1dh29U1Hv07oDtJvKwrSEv67vc6g7YbiMv6zve6Q5Z3/Vud8C2
+jryscXCvO2C7jzxsD5CXNa4edgdsj5CH7THyssbpk+6QNW6fdgdsz7odDjhl
+zYPn3Q4HnLLmzUa3yzWPAk7YXnQ7HHDKmpcvux0OOGXN41fdDgecsL1Gf7nW
+hYATtjfdDgecsL1Ff7nWoYATtnfdLte6FXDKWsfedzsccMpa9z50u1zrYMAJ
+28dul2vdDDhh+9TtcMAJ2yb6wwEnbJ/RHw44Ze0DY/cAOzzKtU8EPMEJz7B9
+6R7K2occHtW+9qGAJzjhGbat7gF2eIQDnsraJxOe1X6t4tfuAXZ4hAOeytqH
+E55h+9Y9wA6PZe3rAU9wwrOup3PAdvcAOzzCAU9lnSsSnmH73j3ADo9lnVMC
+ntS+zikJz7D96B5gh0c44AlOeC7/P0f97B7KOlc5PMIBT7peOeFZ7XUO+wUv
+9UV/7qW+6Hl5qS924lJfNC/1Bfov9UXzUl+g/1JfNC/1RfdSX3Qv9QXuv3vq
+i78WljFv
+     "], {
+      {GrayLevel[0], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 199], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 200], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 201], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 202], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 203], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 204], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 205], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 206], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 207], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 208], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 209], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 210], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 211], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 212], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 213], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 214], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 215], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 216], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 217], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 218], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 219], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 220], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 221], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 222], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 223], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 224], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 225], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 226], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 227], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 228], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 229], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 230], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 231], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 232], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 233], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 234], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 235], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 236], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 237], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 238], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 239], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 240], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 241], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 242], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 243], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 244], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 245], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 246], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 247], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 248], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 249], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 250], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 251], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 252], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 253], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 254], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 255], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 256], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 257], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 258], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 259], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 260], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 261], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 262], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 263], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 264], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 265], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 266], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 267], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 268], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 269], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 270], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 271], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 272], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 273], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 274], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 275], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 276], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 277], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 278], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 279], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 280], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 281], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 282], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 283], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 284], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 285], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 286], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 287], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 288], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 289], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 290], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 291], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 292], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 293], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 294], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 295], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 296], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 297], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 298], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 299], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 300], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 301], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 302], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 303], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 304], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 305], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 306], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 307], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 308], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 309], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 310], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 311], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 312], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 313], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 314], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 315], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 316], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 317], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 318], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 319], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 320], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 321], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 322], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 323], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 324], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 325], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 326], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 327], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 328], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 329], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 330], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 331], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 332], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 333], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 334], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 335], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 336], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 337], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 338], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 339], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 340], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 341], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 342], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 343], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 344], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 345], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 346], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 347], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 348], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 349], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 350], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 351], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 352], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 353], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 354], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 355], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 356], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 357], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 358], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 359], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 360], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 361], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 362], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 363], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 364], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 365], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 366], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 367], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 368], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 369], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 370], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 371], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 372], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 373], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 374], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 375], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 376], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 377], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 378], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 379], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 380], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 381], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 382], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 383], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 384], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 385], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 386], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 387], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 388], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 389], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 390], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 391], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 392], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 393], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 394], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 395], InsetBox[
+        StyleBox["\<\"\[FilledCircle]\"\>",
+         StripOnInput->False,
+         FontSize->8.96], 396]}, {}}], {}}, {{}, {}, 
+    {GrayLevel[0], LineBox[CompressedData["
+1:eJwVT3k41AkARWbGoBMJmVwdSu5jheb5ta515QiVFcNMv1K5E2O2LduxuSZt
+YVLUTlJ0Wh2jZSepJpTIfVSKijSKmlBr7R/ve9/73vve+54+K8afrSAnJxc6
+g//ZwqRQR0FOCfLWry/v76CgXP+IWw1XCQsm/XpjX1GwQnNPQppMCZ0OPt7v
+pBQIVTlF9gl0fI9fUvTwOwV6CoH1Xz7Q4br1baBUlYpCmbOsYrsyaocTfJ11
+qdAcMTOMG1RGwbTplnOmVMzpUOEO96rAPe/SAc9AKo40TpSUblQFeXG4h0NS
+Qal908xuVUWO0XMPVx4V3y7VrnzRMBsMVkv8wgtUDKVzu55VzUXkqDhXSKPh
++h3rWRKdebAdzR7g6dEQe3NVwfmN80AEXpoQ29PwvlyrLqp1HkTa6xN37qTh
+dd7nxc8b5kPQ5SQSdtDQvPNSQ0uVGnrGTvunipTAJ4Ws6xNquJHva7SvXQk+
+kSe/8u3UsSbISq18XAmSkN+NfCrUwU7vJthmdPyzjp328KIG9mZNY3UJHZe1
+dE3+LtCEq8/wnKt5ysioy8woSdaBQBwUuzRdFWLj5XamjGX4SV2QsoRcABe6
++ZDXp9VQ2G8elq+/EPFRzLtZTyxxIthzh61QC/3c8yvsJ2zRqaf17qCfLk4U
+vYq5370GTkhjzAvQw3BqeFPefCauvzm13FPDAMsNkfuiwBkF1HUxNnWGmJoj
+MuEcWofMuJwkn/VLURT0rCXrtAsujOYEe35eBrYwJHpZrhscXPgy7T0rYLn9
+8rchrgeUc09JND8YoylDKPDL8cRwj+LCvF9WgV+haGy81xu/ch0z66Qm0LOj
+3Dub74t4N4OBeK4pNhdEmxg9W4/L0sVWFVNmsBPQY8we+UHcz2F7XTHH1EPZ
+TZVWf1RE7Hkov8sCTZPaKXqPA7DwaapqCsMS2ZuyQe0JRExX8x1GjyV8dw8p
+KgxsgH9EdWnLH1bQP851tu0JQmh6TuUrpjW6X4b+5vA2GO7bzcrmf7VGiUUC
+M6U/BCxedXr/WRskOcXLGto3guGWygvwsIVJsrjy48tNEJVSyxq/2WK8wuW9
+T9dm7O4uZvv9aQchQ9uY9yYUr+V+HL8f9ANCXNpZYunP8HtQz5qi2EM3RqK+
+djAM+qKRVfxSezy6r9KY8XELHhgYa8mFrME9vvjfw0nh+Di3qmVycg2WFsZp
+tEvDoejQ3EQXOCC12uNKVmIECO+Ool4XRwSzHA+Ej0bA8q+T5rwBR6zQDe47
+uZsFrzeJVQ1HnbB/Y2bC2BgL8kWyMLrlWvSN2dDadkVi+ADD5vDjtTA9R2Po
+j0dim1ZH65lkJqgdY7GHY6NgqW2dsksZaNZXcguRRUGDIzfsuwUolvB1Krhs
+zHXtkwZdB2SfrExWythQdVTZcXAaIKyma+g8Du5qErel/s7Q+Pw6hzLJwZLQ
+qOisYmcMqTPDMhO34mlaWRH53hkVnuIr3ImtGKovXZm4loCiYpjToSQSBKco
+9cERAhbNrnrXkkkc86ZIdDIJhBWbzepOIXGgTFUtNovAbUd5iekvJFqr5QWL
++AR2JQkD2w6S2DaYm7DtOIH2waHopfkkhPLVG5SLCVyUJAtqRSRSj+V3ulfO
++HnhvJE7JOxidE8V3pjZ53iEa9aQ4JsGhI7enNlT0FkWXUvCi9nSmCcioOZQ
+fW1BA4m5Xyx5gzUE0soVJRG9JCqbu2anPyJwIXWkLOM5iajHJZlt9QTa3Nuy
+K1+SOMFcRVvZOPNn4HwgfXAmH7lF2vSEwKCu54urH0hotu3LZLTO9L+3qu0a
+JXHrDONdXBsBiBaXKI6R6Dyb7FzXTkAQ9CE6RDajDcMHorsIPDBq99k/QeJk
+7qh5TTeB8U81FuVTJM6pM/cs6CVgIC5Vb/tOwkzfq4rdR8A356hseppEsNmi
+yVvPCfwHlVyQ5Q==
+      "]]}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesOrigin->{0, 0},
+  Frame->True,
+  FrameLabel->{
+    FormBox["\"Number of Primes Less Than\"", TraditionalForm], None},
+  FrameStyle->Directive[
+    GrayLevel[0.5], 12],
+  Method->{},
+  PlotRange->{{0, 200.}, {0, 46.}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{4., 4.}, {0.92, 0.92}}]], "Output",
+ CellChangeTimes->{3.6385592808096533`*^9, 3.6385593629996696`*^9, 
+  3.638559552687096*^9, 3.6385599704018764`*^9, 3.638560003602233*^9, 
+  3.6385600536593533`*^9, 3.638560142070776*^9, 3.6385602454379225`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Dominic", " ", "Martinez"}], "-", "Ta"}]}], 
+  TraditionalForm]], "Input",
+ CellChangeTimes->{{3.6378868961874285`*^9, 3.6378869027158017`*^9}, {
+  3.637886937354783*^9, 3.637886948888443*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"Dominic", " ", "Martinez"}], "-", "Ta"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.637886903102824*^9, {3.637886937356783*^9, 3.637886948888443*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"Physics", " ", "132"}], TraditionalForm]], "Input",
+ CellChangeTimes->{{3.637886904386897*^9, 3.637886906972045*^9}, {
+  3.6378869373577833`*^9, 3.637886948888443*^9}}]
+},
+WindowSize->{1350, 641},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 719, 12, 30, "Input"],
+Cell[1301, 36, 604, 9, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1942, 50, 340, 10, 30, "Input"],
+Cell[2285, 62, 530, 10, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2852, 77, 256, 5, 30, "Input"],
+Cell[3111, 84, 355, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3503, 94, 352, 6, 30, "Input"],
+Cell[3858, 102, 331, 5, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4226, 112, 395, 10, 30, "Input"],
+Cell[4624, 124, 480, 10, 21, "Message"],
+Cell[5107, 136, 478, 10, 21, "Message"],
+Cell[5588, 148, 418, 10, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6043, 163, 497, 12, 30, "Input"],
+Cell[6543, 177, 506, 9, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7086, 191, 306, 7, 30, "Input"],
+Cell[7395, 200, 230, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7662, 209, 385, 8, 30, "Input"],
+Cell[8050, 219, 488, 8, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8575, 232, 315, 7, 30, "Input"],
+Cell[8893, 241, 237, 5, 34, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9167, 251, 500, 11, 30, "Input"],
+Cell[9670, 264, 205, 4, 34, "Output"]
+}, Open  ]],
+Cell[9890, 271, 225, 4, 30, "Input"],
+Cell[CellGroupData[{
+Cell[10140, 279, 450, 10, 40, "Input"],
+Cell[10593, 291, 343, 8, 40, "Output"]
+}, Open  ]],
+Cell[10951, 302, 496, 12, 40, "Input"],
+Cell[CellGroupData[{
+Cell[11472, 318, 290, 6, 30, "Input"],
+Cell[11765, 326, 213, 4, 34, "Output"]
+}, Open  ]],
+Cell[11993, 333, 656, 17, 40, "Input"],
+Cell[CellGroupData[{
+Cell[12674, 354, 329, 8, 30, "Input"],
+Cell[13006, 364, 211, 4, 34, "Output"]
+}, Open  ]],
+Cell[13232, 371, 369, 7, 30, "Input"],
+Cell[13604, 380, 226, 4, 30, "Input"],
+Cell[CellGroupData[{
+Cell[13855, 388, 325, 8, 30, "Input"],
+Cell[14183, 398, 243, 5, 34, "Output"]
+}, Open  ]],
+Cell[14441, 406, 477, 13, 40, "Input"],
+Cell[CellGroupData[{
+Cell[14943, 423, 415, 10, 30, "Input"],
+Cell[15361, 435, 209, 4, 34, "Output"]
+}, Open  ]],
+Cell[15585, 442, 2390, 51, 50, "Input"],
+Cell[CellGroupData[{
+Cell[18000, 497, 597, 18, 51, "Input"],
+Cell[18600, 517, 26665, 662, 255, "Output"]
+}, Open  ]],
+Cell[45280, 1182, 96, 1, 31, "Input"],
+Cell[45379, 1185, 1939, 50, 132, "Input"],
+Cell[CellGroupData[{
+Cell[47343, 1239, 672, 18, 30, "Input"],
+Cell[48018, 1259, 26458, 660, 298, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74513, 1924, 276, 7, 50, "Input"],
+Cell[74792, 1933, 211, 6, 30, "Output"]
+}, Open  ]],
+Cell[75018, 1942, 203, 4, 30, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
