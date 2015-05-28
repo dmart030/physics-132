@@ -1,0 +1,158 @@
+\documentclass[12pt]{report}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\graphicspath{ {images/} }
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\begin{document}
+\title{Lab7 \\ Latent heat of Fusion of Ice \\ Physics 132 Lab}
+\author{Dominic Martinez-Ta}
+\date{22 May 2015}
+\maketitle
+
+
+\section{Purpose}
+	
+	This experiment makes use of measuring the heat capacity of a calorimeter in order to improve the accuracy of a measurement of the latent heat of fusion of ice. In such a mueasurement, the heat transfers between ice, water, the calorimeter and the environment are given by:
+
+
+\begin{equation}
+Q_{water}(T_i \rightarrow T_f) = m_{water}\int_{T_i}^{T_f} c_p(T) dT
+\end{equation}
+
+\begin{equation}
+Q_{cal}(T_i \rightarrow T_f) = \int_{T_i}^{T_f} C_{cal}(T) dT
+\end{equation}
+
+\begin{equation}
+Q_{env}(T_i \rightarrow T_f) = \frac{Q_{cal}(T_i \rightarrow T_f)}{T_f - T_i} \frac{dT}{dt} \Delta t
+\end{equation}
+
+\begin{equation}
+Q_{ice}(T_f) = m_{ice}L + m_{ice}\int_{0^{\circ} C}^{T_f} c_p(T) dT
+\end{equation}
+
+
+And by conservation of energy: 
+
+\begin{equation}
+\Delta U (T_i \rightarrow T_f) = Q_{water}(T_i \rightarrow T_f) + Q_{cal}(T_i \rightarrow T_f) + Q_{ice}(T_i \rightarrow T_f) = 0
+\end{equation}
+
+\section {Materials and resources}
+
+\begin{itemize}
+	\item Calorimeter
+	\item Digital scale
+	\item Hot \& cold water
+	\item ice
+	\item two 250 ML beakers
+	\item Temperature sensor
+	\item Data Studios
+	\item \textbf{Love}
+\end{itemize}
+
+\section{Procedure}
+
+\textbf{Part I: Heat Capacity and the Calorimeter}\\
+The heat energy used to changef the temperature of the inner wall of the thermos is charactized by
+	\[mc_p(T_2 - T_f = C_{cal}(T_f - T_1)\]
+
+\begin{enumerate}
+	\item Add 250 mL of cold water into the calorimeter. Allow several minutes for it to reach equilibirum.
+	\item Measure the common temperature of teh water and the calorimeter. (This will be $T_1$).
+	\item pour out the water and measure the weight of the empty beaker.
+	\item Get 200 mL of hot water in the beaker.
+	\item Measure the temperature of the hot water in the beaker. Take 30 temperature readings in 30 seconds, and record the 30th reading as $T_2$
+	\item Repeat this measurement two more times.
+	\item From the average of the three trials, calculate the uncertainty in L, only once, given by:
+		\[ \Delta C_{cal} = C_{cal}\sqrt{ (\frac{\Delta m_{water}}{m_{water}})^2 + ( \frac{\Delta T_{cal}}{T_{cal}})^2} \]
+\end{enumerate}
+\textbf{Part II: Latent Heat of Fusion of Ice}
+\begin{enumerate}
+	\item Weigh the calorimeter plus the hot water together.
+	\item Record the initial temperature of the water and calorimeter, $T_1$. While gently stirring the water, record the
+temperature at 1 second intervals for 6 minutes, take measurements for about 1 minute and then proceed onto
+step number three. (Continue to take data and generate a graph of temperature vs. time.)
+	\item Carefully dry the ice cube in the Calorimeter. (\textbf{HOW IS THAT POSSIBLE?!!})
+	\item The observed T vs. t graph should contain three distinct regimes: the initial constant temperature, a
+drastic drop in temperature, and the final temperature. Record a copy of T vs. t in the lab report
+	\item The temperature after the initial exchange of heat is the final temperature of the water, melted ice, and the
+calorimeter, $T_f$
+	\item Weigh the calorimeter with the water and melted ice. Calculate the mass of the ice from this measure-ment
+and the previous measurement of the calorimeter and original water alone.
+	\item Repeat this measurement two more times, and take the average of the three trials for lab report calculations.
+	\item From the average of the three trials, calculate the uncertainty in L, only once, given by: 
+		\[ \Delta L = L\sqrt{ [\delta (T_f - 271.15K)]^2 + [\delta (\Delta T)]^2 + [\frac{ \Delta C_{cal}}{C_{cal}}}]^2\]
+\end{enumerate}
+
+
+
+\section{Data Analysis}
+	
+\section{Questions}
+
+\section{Answers to questions}
+
+\section{Conclusion}
+
+\section{Data}
+
+\begin{center}
+
+\begin{table}[h]
+\textbf{Part I}, chromium \\
+ $\begin{array}{ *{7}{c} }
+\toprule
+T_H(C) & T_C(C) & T_F(C) & M_{Total}(g) &  m_{H_2O}(g) & m_{cup}(g) & m_{chromium}(g) \\
+\midrule
+77.0 & 63.7 & 59.7 & 145.73 & 136.22 & 2.00 & 7.51 \\ 
+65.7 & 49.9 & 47.6 & 125.88 & 115.37 & - & -\\ 
+52.5 & 33.8 & 31.6 & 125.76 & 116.25 & - & - \\ 
+34.6 & 18.6 & 18.2 & 126.42 & 116.91 & - & - \\ 
+21.4 & 4.2 & 3.1 & 122.34 & 112.83 & - & - \\ 
+\end{array}$
+\end{table}
+\end{center}
+\begin{center}
+\begin{table}[h]
+\textbf{Part I}, Copper \\
+ $\begin{array}{ *{7}{c} }
+\toprule
+T_H(C) & T_C(C) & T_F(C) & M_{Total}(g) &  m_{H_2O}(g) & m_{cup}(g) & m_{Cu}(g) \\
+\midrule
+77.0 & 60.0 & 61.2 & 142.00 & 100.00 & 2.00 & 40.00 \\ 
+65.7 & 50.0 & 52.1 &  148.00 & 106.00 & - & - \\ 
+48.6 &  34.7 & 34.7 & 153.30 & 113.30 & - & - \\ 
+35.0 &  21.0 &  21.0 &  134.43 &  92.43 & - & - \\ 
+21.0 & 5.0 &  7.3 &  95.7 & 53.7 & - & - \\ 
+ \end{array}$
+\end{table}
+\begin{table}[h]
+\textbf{Part II}, Chromium \\
+ $\begin{array}{ *{9}{c} }
+\toprule
+T_H(C) & T_C(C) & T_F(C) & M_{Total}(g) &  m_{eth}(g) & m_{cup}(g) & m_{chromium}(g)  & \frac{\partial m}{\partial t} & \Delta t(s)\\
+5.0 & -10.0 & -7.3 & 40.2 & 10.0 & 2.0 &  7.51 & 0.02 & 7 \\
+-10.11 & -25 & -24.41 & 38.5 & - & - & - & 0.01 & 8 \\
+-24.12 & -40.0 & -41.05 & 40.5 & - & - & - & 0.03 & 3 \\
+-40.00 & -55.0 & -54.45 & 44.6 & - & - & - & 0.02 & 5 \\
+-55.7 &  -75.0& -74.45 & 38.2 & - & - & - & 0.08 & 13 \\
+\midrule
+\end{array}$
+\end{table}
+\begin{table}[h]
+\textbf{Part II}, Copper \\
+ $\begin{array}{ *{9}{c} }
+\toprule
+T_H(C) & T_C(C) & T_F(C) & M_{Total}(g) &  m_{eth}(g) & m_{cup}(g) & m_{Cu}(g)  & \frac{\partial m}{\partial t} & \Delta t(s)\\
+5.0 & -9.8 & -7.3 & 40.2 & 10.0 & 2.0 &  40.0 & 0.13 & 10 \\
+-10.2 & -25.4 & -24.41 & 38.5 & - & - & - & 0.15 & 9 \\
+-22.5 & -39.9 & -41.05 & 40.5 & - & - & - & 0.09 & 9 \\
+-42.3 & -56.2 & -54.45 & 44.6 & - & - & - & 0.15 & 11 \\
+-55.2 &  -75.5 & -74.48 & 38.2 & - & - & - & 0.07 & 13 \\
+\midrule
+\end{array}$
+\end{table}
+\end{center}
+\end{document}
